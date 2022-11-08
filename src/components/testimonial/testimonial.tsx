@@ -12,35 +12,35 @@ const Testimonial = () => {
     const testimonialData = [
         {
             avatar: avatar1,
-            message: 'Thank you so much madam'
+            message: '"Thank you so much madam"'
         },
         {
             avatar: avatar2,
-            message: 'Thank you so much madam'
+            message: '"Thank you so much madam"'
         },
         {
             avatar: avatar1,
-            message: 'Thank you so much madam'
+            message: '"Thank you so much madam"'
         },
         {
             avatar: avatar2,
-            message: 'Thank you so much madam'
+            message: '"Thank you so much madam"'
         },
         {
             avatar: avatar1,
-            message: 'Thank you so much madam'
+            message: '"Thank you so much madam"'
         },
         {
             avatar: avatar1,
-            message: 'Thank you so much madam'
+            message: '"Thank you so much madam"'
         },
         {
             avatar: avatar2,
-            message: 'Thank you so much madam'
+            message: '"Thank you so much madam"'
         },
         {
             avatar: avatar2,
-            message: 'Thank you so much madam'
+            message: '"Thank you so much madam"'
         },
     ];
 
@@ -55,7 +55,7 @@ const Testimonial = () => {
                         <SwiperSlide key={index}>
                             <div className="d-flex flex-column justify-content-center align-items-center">
                                 <div className="bg--gray-400 border-radius--full size-100 d-flex justify-content-center align-items-center">
-                                    <Image src={item.avatar} width="80px" height="80px" />
+                                    <Image src={item.avatar} width="60px" height="60px" />
                                 </div>
                                 <p className="mt-12">{item.message}</p>
                             </div>
