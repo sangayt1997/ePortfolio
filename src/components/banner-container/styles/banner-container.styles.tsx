@@ -1,0 +1,8 @@
+import styled from "styled-components";
+
+export const IntroBannerContainer = styled.div`
+  display: flex;
+  min-height: 680px;
+  justify-content: center;
+  align-items: center;
+`

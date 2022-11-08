@@ -1,0 +1,57 @@
+@import "variables";
+
+.bg--light {
+  background-color: $bg--light;
+}
+
+.bg--gray-400 {
+  background-color: $gray-400;
+}
+
+.bg--primary {
+  background-color: $primary;
+}
+
+.bg--footer {
+  background-color: $bg--footer;
+}
+
+.bg--white {
+  background-color: white;
+}
+
+.color--white {
+  color: $white !important;
+}
+
+.color--gray-600 {
+  color: $gray-600;
+}
+
+.color--gray-400 {
+  color: $gray-400;
+}
+
+.color--gray-500 {
+  color: $gray-500;
+}
+
+.color--success {
+  color: $success;
+}
+
+.text-decoration--none {
+  text-decoration: none;
+}
+
+.cursor--pointer {
+  cursor: pointer;
+}
+
+.min-height--100vh {
+  min-height: 100vh;
+}
+
+.min-height--140 {
+  min-height: 140px !important;
+}

@@ -1,0 +1,28 @@
+@import "stylesheet/overwrite";
+@import "stylesheet/utilities";
+@import "stylesheet/variables";
+//Always after the bootstrap theming custom variables to avoid problem
+@import "~bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

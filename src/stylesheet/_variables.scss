@@ -1,0 +1,120 @@
+/*
+Custom variables to overwrite bootstrap's default config
+Refer node_modules/bootstrap/scss/_variables.scss to understand more about the variables
+*/
+
+// Overwrites Bootstrap Colors
+$white: #FFFFFF;
+$gray-100: #EAF2FA;
+$gray-200: #F1F1F1;
+$gray-300: #E4E4E4;
+$gray-400: #CCCCCC;
+$gray-500: #BCBCBC;
+$gray-600: #5B5B5B;
+$black: #000000;
+$bg--light: #F9F9FF;
+$bg--footer: #10254E;
+
+$blue: #0088FF;
+$pink: #F9DEDD;
+$red: #FB0000;
+$orange: #FF771F;
+$yellow: #FBD15B;
+$green: #208218;
+$teal: #19977F;
+$cyan: #74C3B4;
+
+// Overwrites Bootstrap Theme Colors
+$primary: #006DCC;
+$secondary: #9AB6DA;
+$success: #66AB57;
+$info: #9AB6DA;
+$warning: #E49B1F;
+$danger: #f44336;
+$body-color: $black;
+$light: $gray-400;
+$dark: $black;
+
+// custom bootstrap breakpoints
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 767px,
+        lg: 992px,
+        xl: 1280px,
+        xxl: 1400px,
+        xxxl: 1920px
+);
+
+// border-radius-variables
+$border-radius: var(--border-radius);
+$border-radius-sm: var(--border-radius-sm);
+$border-radius-lg: var(--border-radius-lg);
+$border-radius-pill: var(--border-radius-circle);
+
+$spacer: 2px; //Used to rescue 4
+$spacers: (
+        0: 0,
+        4: 4px,
+        8: 8px,
+        12: 12px,
+        16: 16px,
+        18: 18px,
+        20: 20px,
+        24: 24px,
+        32: 32px,
+        34: 34px,
+        36: 36px,
+        48: 48px,
+        54: 54px,
+        80: 80px
+);
+
+
+// Overwrites Bootstrap Header Styles
+$h1-font-size: 44px !important;
+$h2-font-size: 34px !important;
+$h3-font-size: 24px !important;
+$h4-font-size: 20px !important;
+$h5-font-size: 16px !important;
+$h6-font-size: 14px !important;
+$headings-font-weight: 600;
+$headings-margin-bottom: 10px;
+
+
+// Overwrite Bootstrap input field color
+$input-color: $gray-600;
+$input-focus-border-color: $primary;
+
+// Overwrite Bootstrap form group margin bottom
+$form-group-margin-bottom: 24px;
+
+//anchor
+$link-color: $blue;
+
+
+
+// Custom root variables
+:root {
+  font-size: 16px;
+  --primary: $primary;
+  --disabled: rgba(32,32,32,0.3);
+  --primary-light: 251,233,219;
+  --light-cyan: #E0F0EC;
+  --gray-100: 234, 242, 250;
+  --gray-300: #E4E4E4;
+  --gray-400: #CCCCCC;
+  --gray-500: #BCBCBC;
+  --gray-600: #5B5B5B;
+  --black: #202020;
+  --facebook: #3B5998;
+  --whatsapp: #075E54;
+  --twitter: #00ACEE;
+  --sms: #5BC236;
+  --mail: #5FC9F8;
+  --linkedin: #4968AD;
+  --border-radius: 4px;
+  --border-radius-sm: 10px;
+  --border-radius-lg: 16px;
+  --border-radius-circle: 50%;
+}
