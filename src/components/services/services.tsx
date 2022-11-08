@@ -4,30 +4,30 @@ import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
-import webDevelopment from "../../assets/icons/web_responsive_development.png";
-import uxDesigning from "../../assets/icons/ux_desiging.png";
-import appDevelopment from "../../assets/icons/app_development.png";
+import privateTuition from "../../assets/icons/private_tuition.png";
+import onlineTuition from "../../assets/icons/onlint_tuition.png";
+import groupTuition from "../../assets/icons/group_tuition.png";
 
 
 const Services = () => {
     const cardData = [
         {
             id: 1,
-            iconImage: webDevelopment,
-            title: "Web Development",
-            caption: 'Help agencies, small businesses, and start-ups achieve high quality web application and website with exceptional user experience',
+            iconImage: privateTuition,
+            title: "Private Tuition",
+            caption: 'Join the highest average result generating private class in the town and get free library books for a year. A-private tuition Class for your son and daughter.',
         },
         {
             id: 2,
-            iconImage: appDevelopment,
-            title: "App Development",
-            caption: 'Building pixel perfect mobile application both in IOS and Android',
+            iconImage: groupTuition,
+            title: "Group/Classroom Tuition",
+            caption: 'One of the best Group or Classroom tuition is given for free tuition fee.',
         },
         {
             id: 3,
-            iconImage: uxDesigning,
-            title: "UI/UX",
-            caption: 'Specialist in designing web, website and mobile application as per the client\'s requirements',
+            iconImage: onlineTuition,
+            title: "Online Tuition",
+            caption: 'Even your Son and Daughter can opt for the online tuition.',
         }
     ]
     return (
@@ -36,7 +36,7 @@ const Services = () => {
                 <div className="d-flex flex-column align-items-center justify-content-center mb-24">
                     <h1>Services</h1>
                     <h4 className="color--gray-600">
-                        The services i can provide as a developer to your company or business.
+                        The following are the services I can provide for you.
                     </h4>
                 </div>
                 <Row className="flex-wrap px-lg-24 p-0">
@@ -51,7 +51,7 @@ const Services = () => {
                                         <Card.Text className="color--gray-600 mb-24">
                                             {item.caption}
                                         </Card.Text>
-                                        <a href="mailto:sangaythinley1694@gmail.com" target="_blank"
+                                        <a href="mailto:passangwangmo729@gmail.com" target="_blank"
                                            rel="noreferrer">
                                             <Button variant="primary">Hire Me</Button>
                                         </a>

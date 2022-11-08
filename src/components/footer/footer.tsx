@@ -6,7 +6,6 @@ import Container from "react-bootstrap/Container";
 import { HashLink as Link } from "react-router-hash-link";
 import {
     faLinkedin,
-    faGithub,
     faTwitter
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -65,22 +64,17 @@ const Footer = () => {
                         </Col>
                         <Col lg={3} sm={12} className="services mt-12">
                             <h3 className="color--white">Services</h3>
-                            <p className="color--gray-400 cursor--pointer">Website development</p>
-                            <p className="color--gray-400 cursor--pointer">Web development</p>
-                            <p className="color--gray-400 cursor--pointer">Mobile development</p>
-                            <p className="color--gray-400 cursor--pointer">UI/UX Design</p>
+                            <p className="color--gray-400 cursor--pointer">Private Tuition</p>
+                            <p className="color--gray-400 cursor--pointer">Group/Class Tuition</p>
+                            <p className="color--gray-400 cursor--pointer">Online Tuition</p>
                         </Col>
                         <Col lg={3} sm={12} className="mt-12">
                             <h3 className="color--white">Follow me</h3>
-                            <a href="https://www.linkedin.com/in/sangay-thinley-47a92b23b/"
+                            <a href="https://www.linkedin.com/"
                                className="social-icon__linkedin social-icon">
                                 <FontAwesomeIcon icon={faLinkedin} size="lg"/>
                             </a>
-                            <a href="https://github.com/sangayt1997"
-                               className="social-icon__github social-icon">
-                                <FontAwesomeIcon icon={faGithub} size="lg"/>
-                            </a>
-                            <a href="https://twitter.com/SangayT97/" className="social-icon__twitter social-icon">
+                            <a href="https://twitter.com" className="social-icon__twitter social-icon">
                                 <FontAwesomeIcon icon={faTwitter} size="lg"/>
                             </a>
                         </Col>

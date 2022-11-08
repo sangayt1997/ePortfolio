@@ -36,7 +36,7 @@ const Header = () => {
             <Container fluid>
                 <div className="d-flex justify-content-center align-items-center">
                     <Image src={logo} width="20px" height="20px" className="me-4"/>
-                    <NavBrand href="#home">Portfolio</NavBrand>
+                    <NavBrand href="#home" className="color--primary">Passang ePortfolio</NavBrand>
                 </div>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">

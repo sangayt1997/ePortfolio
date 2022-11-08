@@ -52,11 +52,10 @@ const About = () => {
                 </div>
                 <Row className="pt-24">
                     <Col lg={6} sm={12} className="pb-20">
-                        <h3>Hello, I'm Sangay Thinley</h3>
+                        <h3>Hello, I'm Passang Wangmo</h3>
                         <h4 className="color--gray-600 lh-base pe-12">
-                            A passionate Mobile App and Web frontend Developer having an experience of building Mobile
-                            and Web applications with Angular | React | Next.js | Javascript & Typescript and
-                            Cross Platform Mobile Apps With Flutter and React-Native.
+                            A teacher-trainee, currently pursuing Postgraduate Diploma in Education in Information Technology
+                            at Samtse College of Education.
                         </h4>
                     </Col>
                     <Col lg={6} sm={12}>
