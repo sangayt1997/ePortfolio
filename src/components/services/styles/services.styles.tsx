@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
   display: flex;
-  min-height: 680px;
+  min-height: 600px;
   padding: 24px 16px;
 
   p {

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
   display: flex;
-  min-height: 680px;
+  min-height: 540px;
   
   .progress {
     height: 8px;

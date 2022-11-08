@@ -36,7 +36,7 @@ const Footer = () => {
 
     return (
         <FooterContainer className="bg--footer py-24 px-16">
-            <Container fluid className="px-40">
+            <Container fluid className="px-80">
                 <Col>
                     <Row>
                         <Col lg={3} sm={12}>
