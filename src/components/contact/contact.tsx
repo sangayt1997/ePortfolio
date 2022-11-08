@@ -16,23 +16,31 @@ const Contact = () => {
     const [message, setMessage] = useState('');
     const userCollectionRef = collection(db, "contactUs");
 
-    const handleSubmit = () => {
+    const handleSubmit = (event: any) => {
         addDoc(userCollectionRef, {
             name: name,
             email: email,
             phoneNo: phoneNo,
             message: message
-        }).then(() => {alert("Your Message send Successfully. Thank you for Contacting Us!!!")})
+        }).then(() => {
+            alert("Your Message send Successfully. Thank you for Contacting Us!!!")
+        }).catch(() => {
+            alert("Form not submitted")
+        });
+        event.preventDefault();
     }
 
     const handleChange = (value: string, control: string) => {
-        if(control === "name") {
+        if (control === "name") {
             setName(value);
-        } if(control === "email") {
+        }
+        if (control === "email") {
             setEmail(value)
-        } if(control === "phoneNo") {
+        }
+        if (control === "phoneNo") {
             setPhoneNo(value)
-        } if(control === "message") {
+        }
+        if (control === "message") {
             setMessage(value)
         }
     };
@@ -83,7 +91,7 @@ const Contact = () => {
                                         <Form.Control
                                             type="email"
                                             placeholder="Enter email"
-                                            onChange={(evt) => handleChange(evt.target.value, "email")}
+                                            onChange={(event) => handleChange(event.target.value, "email")}
                                             value={email}
                                         />
                                     </Form.Group>
@@ -92,7 +100,7 @@ const Contact = () => {
                                         <Form.Control
                                             type="text"
                                             placeholder="Your name"
-                                            onChange={(evt) => handleChange(evt.target.value, "name")}
+                                            onChange={(event) => handleChange(event.target.value, "name")}
                                             value={name}
                                         />
                                     </Form.Group>
@@ -101,7 +109,7 @@ const Contact = () => {
                                         <Form.Control
                                             type="text"
                                             placeholder="Your phone number"
-                                            onChange={(evt) => handleChange(evt.target.value, "phoneNo")}
+                                            onChange={(event) => handleChange(event.target.value, "phoneNo")}
                                             value={phoneNo}
                                         />
                                     </Form.Group>
@@ -112,7 +120,7 @@ const Contact = () => {
                                             className="min-height--140"
                                             type="text"
                                             placeholder="Your message"
-                                            onChange={(evt) => handleChange(evt.target.value, "message")}
+                                            onChange={(event) => handleChange(event.target.value, "message")}
                                             value={message}
                                         />
                                     </Form.Group>
