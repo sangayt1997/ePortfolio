@@ -51,7 +51,7 @@ const Services = () => {
                                         <Card.Text className="color--gray-600 mb-24">
                                             {item.caption}
                                         </Card.Text>
-                                        <a href="mailto:passangwangmo729@gmail.com" target="_blank"
+                                        <a href="mailto:sample@gmail.com" target="_blank"
                                            rel="noreferrer">
                                             <Button variant="primary">Hire Me</Button>
                                         </a>

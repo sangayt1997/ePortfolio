@@ -9,14 +9,14 @@ import Button from "react-bootstrap/Button";
 const BannerContainer = () => {
     const onButtonClick = () => {
         // using Java Script method to get PDF file
-        fetch('Passang_Wangmo_CV.docx').then(response => {
+        fetch('sample.docx').then(response => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
                 // Setting various property values
                 const alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = 'Passang_Wangmo_CV.docx';
+                alink.download = 'sample.docx';
                 alink.click();
             })
         })
@@ -25,10 +25,10 @@ const BannerContainer = () => {
         <IntroBannerContainer className="bg--light" id="home">
             <Row className="container justify-content-between align-items-center py-16">
                 <Col lg={6} sm={12}>
-                    <h2>Hello, I'm Passang Wangmo.</h2>
+                    <h2>Hello, I'm Sam.</h2>
                     <h6 className="color--gray-600">
-                        A teacher-trainee, currently pursuing Postgraduate Diploma in Education in Information Technology
-                        at Samtse College of Education.
+                        I am currently pursuing PHD in Software Engineering and Information Technology
+                        at Howard University.
                     </h6>
                     <Button className="color--white mt-sm-34 mt-12" onClick={onButtonClick}>DOWNLOAD CV</Button>
                 </Col>
