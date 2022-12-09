@@ -42,8 +42,8 @@ const Footer = () => {
                         <Col lg={3} sm={12}>
                             <h3 className="color--white">About</h3>
                             <p className="color--gray-400 pe-24">
-                                A teacher-trainee, currently pursuing Postgraduate Diploma in Education in Information Technology
-                                at Samtse College of Education.
+                                I am currently pursuing PHD in Software Engineering and Information Technology
+                                at Howard University.
                             </p>
                         </Col>
                         <Col lg={3} sm={12}>

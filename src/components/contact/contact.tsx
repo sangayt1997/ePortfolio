@@ -57,11 +57,11 @@ const Contact = () => {
                             <div className="bg--primary icon-button">
                                 <span className="material-icons icon-button__icon">location_on</span>
                             </div>
-                            <p className="mb-0 ms-24 color--gray-600">Samtse District, Bhutan</p>
+                            <p className="mb-0 ms-24 color--gray-600">Washington, DC.</p>
                         </div>
                         <div className="d-flex align-items-center mb-12">
                             <div className="bg--primary icon-button">
-                                <a href="mailto:passangwangmo729@gmail.com"
+                                <a href="mailto:sample@gmail.com"
                                    target="_blank"
                                    rel="noreferrer"
                                    className="d-flex justify-content-center align-items-center text-decoration--none"
@@ -69,17 +69,17 @@ const Contact = () => {
                                     <span className="material-icons icon-button__icon">mail</span>
                                 </a>
                             </div>
-                            <p className="mb-0 ms-24 color--gray-600">passangwangmo729@gmail.com</p>
+                            <p className="mb-0 ms-24 color--gray-600">sample@gmail.com</p>
                         </div>
                         <div className="d-flex align-items-center mb-12">
                             <div className="bg--primary icon-button">
-                                <a href="tel:+97577723096"
+                                <a href="tel:123456789"
                                    className="d-flex justify-content-center align-items-center text-decoration--none"
                                 >
                                     <span className="material-icons icon-button__icon">phone</span>
                                 </a>
                             </div>
-                            <p className="mb-0 ms-24 color--gray-600">+975 17876162</p>
+                            <p className="mb-0 ms-24 color--gray-600">+975 123456789</p>
                         </div>
                     </Col>
                     <Col lg={6} sm={12}>
