@@ -73,13 +73,13 @@ const Contact = () => {
                         </div>
                         <div className="d-flex align-items-center mb-12">
                             <div className="bg--primary icon-button">
-                                <a href="tel:123456789"
+                                <a href="tel:+1 123456789"
                                    className="d-flex justify-content-center align-items-center text-decoration--none"
                                 >
                                     <span className="material-icons icon-button__icon">phone</span>
                                 </a>
                             </div>
-                            <p className="mb-0 ms-24 color--gray-600">+975 123456789</p>
+                            <p className="mb-0 ms-24 color--gray-600">+1 123456789</p>
                         </div>
                     </Col>
                     <Col lg={6} sm={12}>
