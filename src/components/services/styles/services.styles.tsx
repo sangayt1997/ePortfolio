@@ -14,7 +14,7 @@ export const ServicesContainer = styled.div`
 
     &:hover {
       transform: translateY(-2px);
-      background-color: #F0F8FF;
+      background-color: #E1F6FF;
     }
   }
 

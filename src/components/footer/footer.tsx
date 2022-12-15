@@ -62,11 +62,12 @@ const Footer = () => {
                                 ))
                             }
                         </Col>
-                        <Col lg={3} sm={12} className="services mt-12">
+                        <Col lg={3} sm={12} className="mt-12">
                             <h3 className="color--white">Services</h3>
-                            <p className="color--gray-400 cursor--pointer">Private Tuition</p>
-                            <p className="color--gray-400 cursor--pointer">Group/Class Tuition</p>
-                            <p className="color--gray-400 cursor--pointer">Online Tuition</p>
+                            <p className="color--gray-400">Web Development</p>
+                            <p className="color--gray-400">App Development</p>
+                            <p className="color--gray-400">UI/UX Designing</p>
+                            <p className="color--gray-400">DataBase Development</p>
                         </Col>
                         <Col lg={3} sm={12} className="mt-12">
                             <h3 className="color--white">Follow me</h3>

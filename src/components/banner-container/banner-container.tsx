@@ -3,7 +3,7 @@ import { IntroBannerContainer } from "./styles/banner-container.styles";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
-import profileImage from "../../assets/images/dummy_profile.png";
+import profileImage from "../../assets/images/freepik_profile.png";
 import Button from "react-bootstrap/Button";
 
 const BannerContainer = () => {
@@ -35,7 +35,7 @@ const BannerContainer = () => {
                 <Col lg={6} sm={12} className="d-flex justify-content-center">
                     <Image
                         src={profileImage}
-                        alt="profile image"
+                        alt="Design by Freepik"
                         width="80%"
                         height="80%"
                     />

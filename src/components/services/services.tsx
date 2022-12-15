@@ -4,30 +4,37 @@ import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
-import privateTuition from "../../assets/icons/private_tuition.png";
-import onlineTuition from "../../assets/icons/onlint_tuition.png";
-import groupTuition from "../../assets/icons/group_tuition.png";
+import webDevelopment from "../../assets/icons/web_development.png";
+import appDevelopment from "../../assets/icons/app_development.png";
+import uiUXDesigning from "../../assets/icons/ui_ux_designing.png";
+import databaseDevelopment from "../../assets/icons/database_development.png";
 
 
 const Services = () => {
     const cardData = [
         {
             id: 1,
-            iconImage: privateTuition,
-            title: "Private Tuition",
-            caption: 'Join the highest average result generating private class in the town and get free library books for a year. A-private tuition Class for your son and daughter.',
+            iconImage: webDevelopment,
+            title: "Web Development",
+            caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur.',
         },
         {
             id: 2,
-            iconImage: groupTuition,
-            title: "Group/Classroom Tuition",
-            caption: 'One of the best Group or Classroom tuition is given for free tuition fee.',
+            iconImage: appDevelopment,
+            title: "App Development",
+            caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur.',
         },
         {
             id: 3,
-            iconImage: onlineTuition,
-            title: "Online Tuition",
-            caption: 'Even your Son and Daughter can opt for the online tuition.',
+            iconImage: uiUXDesigning,
+            title: "UI/UX Designing",
+            caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur.',
+        },
+        {
+            id: 4,
+            iconImage: databaseDevelopment,
+            title: "Database Development",
+            caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur.',
         }
     ]
     return (
