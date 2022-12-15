@@ -30,7 +30,7 @@ const Testimonial = () => {
         {
             avatar: avatar2,
             message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur."',
-            name: 'Emily(Employee of Goggle)'
+            name: 'Emily(Employee of Google)'
         },
         {
             avatar: avatar1,
