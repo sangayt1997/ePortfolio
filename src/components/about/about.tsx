@@ -29,19 +29,19 @@ const About = () => {
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>Qualification 1</Accordion.Header>
                                     <Accordion.Body>
-                                        Qualification 1 details content here
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="1">
                                     <Accordion.Header>Qualification 2</Accordion.Header>
                                     <Accordion.Body>
-                                        Qualification 2 details content here
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="2">
                                     <Accordion.Header>Qualification 3</Accordion.Header>
                                     <Accordion.Body>
-                                        Qualification 3 details content here
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur.
                                     </Accordion.Body>
                                 </Accordion.Item>
                             </Accordion>

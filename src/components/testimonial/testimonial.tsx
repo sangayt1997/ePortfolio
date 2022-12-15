@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from "react-bootstrap/Image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import SwiperCore, { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./styles/swiper.scss";
@@ -9,46 +9,48 @@ import avatar1 from "../../assets/images/avatar_1.png";
 import avatar2 from "../../assets/images/avatar_2.png";
 
 const Testimonial = () => {
+    SwiperCore.use([Autoplay]);
+
     const testimonialData = [
         {
             avatar: avatar1,
-            message: '"Thank you so much madam"',
-            name: 'Dorji Wangmo(Student)'
+            message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur."',
+            name: 'Molly(Friend)'
         },
         {
             avatar: avatar2,
-            message: '"Thank you so much madam"',
-            name: 'Sangay Dorji(Student)'
+            message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur."',
+            name: 'Amy(Professor)'
         },
         {
             avatar: avatar1,
-            message: '"Thank you so much madam for guiding my daughter as she brought good grade this year."',
-            name: 'Pema Yangden(Parent)'
+            message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur."',
+            name: 'Claire(CEO of ComTech)'
         },
         {
             avatar: avatar2,
-            message: '"Thank you so much madam guiding me."',
-            name: 'Sangay Wangchuk(Student)'
+            message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur."',
+            name: 'Emily(Employee of Goggle)'
         },
         {
             avatar: avatar1,
-            message: '"Thank you so much madam"',
-            name: 'Pema Lhamo(Student)'
+            message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur."',
+            name: 'Jorden(College mate)'
         },
         {
             avatar: avatar1,
-            message: '"Thank you so much madam"',
-            name: 'Lhetro(Student)'
+            message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur."',
+            name: 'Katie(Professor)'
         },
         {
             avatar: avatar2,
-            message: '"Thank you so much madam"',
-            name: 'Karma Yangchen(Student)'
+            message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur."',
+            name: 'Jenna(CTO of ComTech)'
         },
         {
             avatar: avatar2,
-            message: '"Thank you so much madam"',
-            name: 'Pelden Dorji(Student)'
+            message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur."',
+            name: 'Katherine(Entrepreneur)'
         },
     ];
 
@@ -56,12 +58,13 @@ const Testimonial = () => {
         <div className="bg--white custom-swiper" id="testimonial">
             <Swiper
                 slidesPerView={3}
+                autoplay={true}
                 navigation={true} modules={[Navigation]}
             >
                 {
                     testimonialData.map((item,index) => (
                         <SwiperSlide key={index}>
-                            <div className="d-flex flex-column justify-content-center align-items-center">
+                            <div className="d-flex flex-column justify-content-center align-items-center px-5">
                                 <div className="bg--gray-400 border-radius--full size-100 d-flex justify-content-center align-items-center">
                                     <Image src={item.avatar} width="60px" height="60px" />
                                 </div>
