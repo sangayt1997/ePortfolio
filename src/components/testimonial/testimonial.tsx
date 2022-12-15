@@ -56,6 +56,9 @@ const Testimonial = () => {
 
     return (
         <div className="bg--white custom-swiper" id="testimonial">
+            <div className="d-flex justify-content-center align-items-center">
+                <h1>Testimonial</h1>
+            </div>
             <Swiper
                 slidesPerView={3}
                 autoplay={true}
