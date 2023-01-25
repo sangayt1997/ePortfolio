@@ -23,9 +23,9 @@ const Contact = () => {
             phoneNo: phoneNo,
             message: message
         }).then(() => {
-            alert("Your Message send Successfully. Thank you for Contacting Us!!!")
+            alert("Your Message send Successfully in Firebase Database. Thank you for Contacting Us!!!")
         }).catch(() => {
-            alert("Form not submitted")
+            alert("Form not submitted!!!")
         });
         event.preventDefault();
     }
