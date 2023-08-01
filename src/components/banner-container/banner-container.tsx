@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
 import profileImage from "../../assets/images/freepik_profile.png";
 import Button from "react-bootstrap/Button";
+import Swal from "sweetalert2";
 
 const BannerContainer = () => {
     const onButtonClick = () => {
@@ -19,6 +20,13 @@ const BannerContainer = () => {
                 alink.download = 'sample.docx';
                 alink.click();
             })
+        });
+        Swal.fire({
+            title: 'Download Completed!',
+            text: 'Thank you for downloading resume.',
+            icon: 'success',
+            showConfirmButton: false,
+            timer: 2500
         })
     }
     return (

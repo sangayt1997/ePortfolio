@@ -8,6 +8,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { db } from "../../firebase-config";
 import { addDoc, collection } from "firebase/firestore";
+import Swal from "sweetalert2";
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -22,10 +23,24 @@ const Contact = () => {
             email: email,
             phoneNo: phoneNo,
             message: message
-        }).then(() => {
-            alert("Your Message send Successfully in Firebase Database. Thank you for Contacting Us!!!")
-        }).catch(() => {
-            alert("Form not submitted!!!")
+        }).then((response) => {
+            Swal.fire({
+                title: 'Message Send Successfully!',
+                text: 'Thank you for contacting me.',
+                icon: 'success',
+                showConfirmButton: false,
+                timer: 2500
+            })
+        }).catch((err) => {
+            console.log('FAILED...', err);
+            Swal.fire({
+                title: 'OPPS!',
+                text: 'Something Went wrong! Please try again later.',
+                icon: 'error',
+                showCloseButton: true,
+                showConfirmButton: false,
+                timer: 4500
+            })
         });
         event.preventDefault();
     }
