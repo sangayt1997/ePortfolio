@@ -16,25 +16,25 @@ const Services = () => {
             id: 1,
             iconImage: webDevelopment,
             title: "Web Development",
-            caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur.',
+            caption: 'Unlock Your Digital Potential! Discover the art of web development with me. From captivating designs to flawless functionality, I create websites that impress and perform. Let\'s turn your ideas into an unforgettable online experience.',
         },
         {
             id: 2,
             iconImage: appDevelopment,
             title: "App Development",
-            caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur.',
+            caption: 'Ignite Innovation with App Development! Transforming ideas into cutting-edge mobile experiences. User-centric design, flawless functionality. Let\'s build your app that stands out!',
         },
         {
             id: 3,
             iconImage: uiUXDesigning,
             title: "UI/UX Designing",
-            caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur.',
+            caption: 'Revolutionizing Design: Unleash the Power of UI/UX! Transforming visions into captivating realities. From wireframes to pixel-perfect masterpieces, let\'s create an extraordinary user experience. Elevate your brand with our design expertise!',
         },
         {
             id: 4,
             iconImage: databaseDevelopment,
             title: "Database Development",
-            caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur.',
+            caption: 'Empowering Data-Driven Solutions! Harness the potential of database development. Seamless organization, lightning-fast retrieval. Let\'s build a robust foundation for your digital success!',
         }
     ]
     return (
