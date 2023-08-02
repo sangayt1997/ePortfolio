@@ -3,7 +3,7 @@ import { IntroBannerContainer } from "./styles/banner-container.styles";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
-import profileImage from "../../assets/images/freepik_profile.png";
+import profileImage from "../../assets/images/profile.png";
 import Button from "react-bootstrap/Button";
 import Swal from "sweetalert2";
 

@@ -7,6 +7,10 @@ import "swiper/css/navigation";
 import "./styles/swiper.scss";
 import avatar1 from "../../assets/images/avatar_1.png";
 import avatar2 from "../../assets/images/avatar_2.png";
+import avatar3 from "../../assets/images/avatar_3.png";
+import avatar4 from "../../assets/images/avatar_4.png";
+import avatar5 from "../../assets/images/avatar_5.png";
+import avatar6 from "../../assets/images/avatar_6.png";
 
 const Testimonial = () => {
     SwiperCore.use([Autoplay]);
@@ -23,34 +27,24 @@ const Testimonial = () => {
             name: 'Amy(Professor)'
         },
         {
-            avatar: avatar1,
+            avatar: avatar3,
             message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur."',
             name: 'Claire(CEO of ComTech)'
         },
         {
-            avatar: avatar2,
+            avatar: avatar4,
             message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur."',
             name: 'Emily(Employee of Google)'
         },
         {
-            avatar: avatar1,
+            avatar: avatar5,
             message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur."',
             name: 'Jorden(College mate)'
         },
         {
-            avatar: avatar1,
+            avatar: avatar6,
             message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur."',
             name: 'Katie(Professor)'
-        },
-        {
-            avatar: avatar2,
-            message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur."',
-            name: 'Jenna(CTO of ComTech)'
-        },
-        {
-            avatar: avatar2,
-            message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat quis nibh quis sagittis. Aliquam mollis mi id libero efficitur consequat. Duis et leo id eros efficitur viverra. Praesent a lectus eget tellus luctus consectetur."',
-            name: 'Katherine(Entrepreneur)'
         },
     ];
 
@@ -68,9 +62,7 @@ const Testimonial = () => {
                     testimonialData.map((item,index) => (
                         <SwiperSlide key={index}>
                             <div className="d-flex flex-column justify-content-center align-items-center px-5">
-                                <div className="bg--gray-400 border-radius--full size-100 d-flex justify-content-center align-items-center">
-                                    <Image src={item.avatar} width="60px" height="60px" />
-                                </div>
+                                <Image src={item.avatar} width="70px" height="70px" className="border-radius--full shadow-sm" alt="testmonial avatar" />
                                 <p className="mt-12">{item.name}</p>
                                 <p className="fs--14 color--gray-600 m-auto">{item.message}</p>
                             </div>
