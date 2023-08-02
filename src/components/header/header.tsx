@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
-import { NavBrand, NavLink } from "./styles/header.styles";
+import { CustomNavBar, NavBrand, NavLink } from "./styles/header.styles";
 import logo from "../../assets/images/logo.png";
 
 const Header = () => {
@@ -32,7 +32,7 @@ const Header = () => {
     ]
 
     return (
-        <Navbar sticky="top" bg="white" expand="lg" className="shadow-sm px-16 py-18">
+        <CustomNavBar sticky="top" bg="white" expand="lg" className="px-16 py-18">
             <Container fluid>
                 <div className="d-flex justify-content-center align-items-center">
                     <Image src={logo} width="20px" height="20px" className="me-4"/>
@@ -51,7 +51,7 @@ const Header = () => {
                     </Nav>
                 </Navbar.Collapse>
             </Container>
-        </Navbar>
+        </CustomNavBar>
     );
 };
 

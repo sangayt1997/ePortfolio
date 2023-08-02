@@ -55,7 +55,7 @@ const Testimonial = () => {
     ];
 
     return (
-        <div className="bg--white custom-swiper" id="testimonial">
+        <div className="bg--white custom-swiper py-24 px-16" id="testimonial">
             <div className="d-flex justify-content-center align-items-center">
                 <h1>Testimonial</h1>
             </div>
