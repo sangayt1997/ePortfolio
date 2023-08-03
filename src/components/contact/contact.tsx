@@ -23,7 +23,7 @@ const Contact = () => {
             email: email,
             phoneNo: phoneNo,
             message: message
-        }).then((response) => {
+        }).then(() => {
             Swal.fire({
                 title: 'Message Send Successfully!',
                 text: 'Thank you for contacting me.',
