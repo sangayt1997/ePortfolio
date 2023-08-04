@@ -11,6 +11,7 @@ import avatar3 from "../../assets/images/avatar_3.png";
 import avatar4 from "../../assets/images/avatar_4.png";
 import avatar5 from "../../assets/images/avatar_5.png";
 import avatar6 from "../../assets/images/avatar_6.png";
+import { TestimonialContainer } from "./styles/testimonial.styles";
 
 const Testimonial = () => {
     SwiperCore.use([Autoplay]);
@@ -49,7 +50,7 @@ const Testimonial = () => {
     ];
 
     return (
-        <div className="bg--white custom-swiper py-24 px-16" id="testimonial">
+        <TestimonialContainer className="bg--white custom-swiper" id="testimonial">
             <div className="d-flex justify-content-center align-items-center">
                 <h1>Testimonial</h1>
             </div>
@@ -59,19 +60,20 @@ const Testimonial = () => {
                 navigation={true} modules={[Navigation]}
             >
                 {
-                    testimonialData.map((item,index) => (
-                        <SwiperSlide key={index}>
-                            <div className="d-flex flex-column justify-content-center align-items-center px-5">
-                                <Image src={item.avatar} width="70px" height="70px" className="border-radius--full shadow-sm" alt="testmonial avatar" />
-                                <p className="mt-12">{item.name}</p>
-                                <p className="fs--14 color--gray-600 m-auto">{item.message}</p>
-                            </div>
-                        </SwiperSlide>
+                    testimonialData.map((item, index) => (
+                            <SwiperSlide key={index}>
+                                <div className="d-flex flex-column justify-content-center align-items-center px-5 testimonial-card">
+                                    <Image src={item.avatar} width="70px" height="70px"
+                                           className="border-radius--full shadow-sm" alt="testmonial avatar"/>
+                                    <p className="mt-12">{item.name}</p>
+                                    <p className="fs--14 color--gray-600">{item.message}</p>
+                                </div>
+                            </SwiperSlide>
                         )
                     )
                 }
             </Swiper>
-        </div>
+        </TestimonialContainer>
     );
 };
 
