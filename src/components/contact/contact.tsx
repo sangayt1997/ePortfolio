@@ -17,6 +17,7 @@ const Contact = () => {
     const [message, setMessage] = useState('');
     const userCollectionRef = collection(db, "contactUs");
 
+    // eslint-disable-next-line
     const handleSubmit = (event: any) => {
         addDoc(userCollectionRef, {
             name: name,
