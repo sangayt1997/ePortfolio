@@ -19,31 +19,37 @@ const Contact = () => {
 
     // eslint-disable-next-line
     const handleSubmit = (event: any) => {
+        event.preventDefault();
+
         addDoc(userCollectionRef, {
-            name: name,
-            email: email,
-            phoneNo: phoneNo,
-            message: message
-        }).then(() => {
+        name: name,
+        email: email,
+        phoneNo: phoneNo,
+        message: message
+    }).then(() => {
             Swal.fire({
-                title: 'Message Send Successfully!',
-                text: 'Thank you for contacting me.',
-                icon: 'success',
-                showConfirmButton: false,
-                timer: 2500
-            })
+            title: 'Message Send Successfully!',
+            text: 'Thank you for contacting me.',
+            icon: 'success',
+            showConfirmButton: false,
+            timer: 2500
+        })
         }).catch((err) => {
             console.log('FAILED...', err);
             Swal.fire({
-                title: 'OPPS!',
-                text: 'Something Went wrong! Please try again later.',
-                icon: 'error',
-                showCloseButton: true,
-                showConfirmButton: false,
-                timer: 4500
-            })
+            title: 'OPPS!',
+            text: 'Something Went wrong! Please try again later.',
+            icon: 'error',
+            showCloseButton: true,
+            showConfirmButton: false,
+            timer: 2500
+        })
         });
-        event.preventDefault();
+        // Reset form fields by setting state variables
+        setName('');
+        setEmail('');
+        setPhoneNo('');
+        setMessage('');
     }
 
     const handleChange = (value: string, control: string) => {
