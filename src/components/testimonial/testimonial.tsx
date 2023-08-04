@@ -57,7 +57,8 @@ const Testimonial = () => {
             <Swiper
                 slidesPerView={3}
                 autoplay={true}
-                navigation={true} modules={[Navigation]}
+                navigation={true}
+                modules={[Navigation]}
             >
                 {
                     testimonialData.map((item, index) => (
