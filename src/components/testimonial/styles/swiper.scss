@@ -1,6 +1,6 @@
 .swiper {
   width: 100%;
-  height: 100%;
+  padding: 24px 0 !important;
 }
 
 .swiper-slide {
@@ -28,4 +28,12 @@
 
 .swiper-slide {
   padding: 0 24px !important;
+}
+
+.swiper-button-prev {
+  left: 0 !important;
+}
+
+.swiper-button-next {
+  right: 0 !important;
 }
