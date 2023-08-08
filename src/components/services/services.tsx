@@ -49,7 +49,7 @@ const Services = () => {
                 <Row className="flex-wrap px-lg-24 p-0">
                     {
                         cardData.map((item) => (
-                            <Col key={item.id} lg={4} sm={12} className="mb-24">
+                            <Col key={item.id} lg={4} md={6} sm={12} className="mb-24">
                                 <Card className="cursor--pointer">
                                     <Card.Body>
                                         <Card.Img variant="top" src={item.iconImage} width="40px" height="40px"
