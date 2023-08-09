@@ -32,7 +32,7 @@ const BannerContainer = () => {
     return (
         <IntroBannerContainer className="bg--light" id="home">
             <Row className="container justify-content-between align-items-center py-16">
-                <Col lg={6} sm={12}>
+                <Col lg={6} sm={12} className="mb-18 mb-md-0">
                     <h2>Hello, I'm Sam.</h2>
                     <h6 className="color--gray-600">
                         I am currently pursuing PHD in Software Engineering and Information Technology

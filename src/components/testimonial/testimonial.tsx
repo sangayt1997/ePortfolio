@@ -5,13 +5,13 @@ import SwiperCore, { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./styles/swiper.scss";
+import { TestimonialContainer } from "./styles/testimonial.styles";
 import avatar1 from "../../assets/images/avatar_1.png";
 import avatar2 from "../../assets/images/avatar_2.png";
 import avatar3 from "../../assets/images/avatar_3.png";
 import avatar4 from "../../assets/images/avatar_4.png";
 import avatar5 from "../../assets/images/avatar_5.png";
 import avatar6 from "../../assets/images/avatar_6.png";
-import { TestimonialContainer } from "./styles/testimonial.styles";
 
 const Testimonial = () => {
     SwiperCore.use([Autoplay]);
@@ -55,10 +55,23 @@ const Testimonial = () => {
                 <h1>Testimonial</h1>
             </div>
             <Swiper
-                slidesPerView={3}
-                autoplay={true}
+                autoplay={false}
                 navigation={true}
                 modules={[Navigation]}
+                breakpoints={{
+                    1200: {
+                        slidesPerView: 3,
+                    },
+                    992: {
+                        slidesPerView: 2,
+                    },
+                    768: {
+                      slidesPerView: 2,
+                    },
+                    480: {
+                        slidesPerView: 1,
+                    }
+                  }}
             >
                 {
                     testimonialData.map((item, index) => (
