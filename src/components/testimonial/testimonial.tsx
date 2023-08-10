@@ -55,7 +55,7 @@ const Testimonial = () => {
                 <h1>Testimonial</h1>
             </div>
             <Swiper
-                autoplay={false}
+                autoplay={true}
                 navigation={true}
                 modules={[Navigation]}
                 breakpoints={{
