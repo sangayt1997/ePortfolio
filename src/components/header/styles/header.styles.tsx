@@ -13,5 +13,4 @@ export const NavLink = styled(Link)`
   font-size: 12px;
   font-weight: bold;
   text-decoration: none;
-  color: #5B5B5B;
 `

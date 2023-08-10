@@ -41,8 +41,8 @@ const Services = () => {
         <ServicesContainer id="services">
             <div>
                 <div className="d-flex flex-column align-items-center justify-content-center mb-24">
-                    <h1>Services</h1>
-                    <h4 className="color--gray-600">
+                    <h1 className="color--text-primary">Services</h1>
+                    <h4 className="color--text-secondary">
                         The following are the services I can provide for you.
                     </h4>
                 </div>

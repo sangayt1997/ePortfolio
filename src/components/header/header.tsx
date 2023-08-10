@@ -36,14 +36,14 @@ const Header = () => {
             <Container fluid>
                 <div className="d-flex justify-content-center align-items-center">
                     <Image src={logo} width="20px" height="20px" className="me-4"/>
-                    <NavBrand href="#home" className="color--primary">Sample ePortfolio</NavBrand>
+                    <NavBrand href="#home" className="color--text-primary">Sample ePortfolio</NavBrand>
                 </div>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         {
                             menuData.map((item) => (
-                                <NavLink to={item.path} key={item.name} smooth className="mx-lg-8 my-lg-0 my-8">
+                                <NavLink to={item.path} key={item.name} smooth className="mx-lg-8 my-lg-0 my-8 color--text-secondary">
                                     {item.name}
                                 </NavLink>
                             ))
