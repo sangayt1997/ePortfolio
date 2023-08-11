@@ -54,8 +54,8 @@ const Services = () => {
                                     <Card.Body>
                                         <Card.Img variant="top" src={item.iconImage} width="40px" height="40px"
                                                   className="mb-24"/>
-                                        <Card.Title className="mb-24">{item.title}</Card.Title>
-                                        <Card.Text className="color--gray-600 mb-24">
+                                        <Card.Title className="color--text-primary mb-24">{item.title}</Card.Title>
+                                        <Card.Text className="color--text-secondary mb-24">
                                             {item.caption}
                                         </Card.Text>
                                         <a href="mailto:sample@gmail.com" target="_blank"
