@@ -41,8 +41,8 @@ const Services = () => {
         <ServicesContainer id="services">
             <div>
                 <div className="d-flex flex-column align-items-center justify-content-center mb-24">
-                    <h1>Services</h1>
-                    <h4 className="color--gray-600">
+                    <h1 className="color--text-primary">Services</h1>
+                    <h4 className="color--text-secondary">
                         The following are the services I can provide for you.
                     </h4>
                 </div>
@@ -54,8 +54,8 @@ const Services = () => {
                                     <Card.Body>
                                         <Card.Img variant="top" src={item.iconImage} width="40px" height="40px"
                                                   className="mb-24"/>
-                                        <Card.Title className="mb-24">{item.title}</Card.Title>
-                                        <Card.Text className="color--gray-600 mb-24">
+                                        <Card.Title className="color--text-primary mb-24">{item.title}</Card.Title>
+                                        <Card.Text className="color--text-secondary mb-24">
                                             {item.caption}
                                         </Card.Text>
                                         <a href="mailto:sample@gmail.com" target="_blank"

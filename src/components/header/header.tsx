@@ -43,7 +43,7 @@ const Header = () => {
                     <Nav className="ms-auto">
                         {
                             menuData.map((item) => (
-                                <NavLink to={item.path} key={item.name} smooth className="mx-lg-8 my-lg-0 my-8">
+                                <NavLink to={item.path} key={item.name} smooth className="mx-lg-8 my-lg-0 my-8 color--text-secondary">
                                     {item.name}
                                 </NavLink>
                             ))

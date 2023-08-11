@@ -10,15 +10,15 @@ const About = () => {
         <AboutContainer className="bg--light" id="about">
             <Container fluid className="py-lg-24 px-lg-80 p-24">
                 <div className="d-flex justify-content-center align-items-center">
-                    <h1>About Me</h1>
+                    <h1 className="color--text-primary">About Me</h1>
                 </div>
                 <Row className="pt-24">
                     <Col lg={6} sm={12} className="pb-20">
-                        <h3>Hello, I'm Sam</h3>
-                        <h4 className="color--gray-600 lh-base pe-12">
+                        <h3 className="color--text-primary">Hello, I'm Sam</h3>
+                        <p className="color--text-primary lh-base pe-12">
                             I am currently pursuing PHD in Software Engineering and Information Technology
                             at Howard University.
-                        </h4>
+                        </p>
                     </Col>
                     <Col lg={6} sm={12}>
                         <h3 className="d-flex align-items-center justify-content-center mb-12">

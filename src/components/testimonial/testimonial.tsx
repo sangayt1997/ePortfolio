@@ -52,7 +52,7 @@ const Testimonial = () => {
     return (
         <TestimonialContainer className="bg--white custom-swiper" id="testimonial">
             <div className="d-flex justify-content-center align-items-center">
-                <h1>Testimonial</h1>
+                <h1 className="color--text-primary">Testimonial</h1>
             </div>
             <Swiper
                 autoplay={true}

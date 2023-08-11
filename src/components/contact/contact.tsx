@@ -71,7 +71,7 @@ const Contact = () => {
         <ContactContainer className="bg--light" id="contact">
             <Container fluid className="py-lg-24 px-lg-80 p-24">
                 <div className="d-flex justify-content-center align-items-center">
-                    <h1>Contact Me</h1>
+                    <h1 className="color--text-primary">Contact Me</h1>
                 </div>
                 <Row className="pt-24">
                     <Col lg={6} sm={12} className="pb-20">
