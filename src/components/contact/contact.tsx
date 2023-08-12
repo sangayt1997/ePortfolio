@@ -107,6 +107,7 @@ const Contact = () => {
                     <Col lg={6} sm={12}>
                         <Card className="py-24 px-16">
                             <Card.Body>
+                                <h4 className="mb-18 color--text-primary">Get In Touch</h4>
                                 <Form onSubmit={handleSubmit}>
                                     <Form.Group className="mb-12">
                                         <Form.Label>Your email</Form.Label>
