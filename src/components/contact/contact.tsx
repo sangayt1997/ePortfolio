@@ -107,6 +107,7 @@ const Contact = () => {
                     <Col lg={6} sm={12}>
                         <Card className="py-24 px-16">
                             <Card.Body>
+                                <h4 className="mb-18 color--text-primary">Get In Touch</h4>
                                 <Form onSubmit={handleSubmit}>
                                     <Form.Group className="mb-12">
                                         <Form.Label>Your email</Form.Label>
@@ -115,6 +116,7 @@ const Contact = () => {
                                             placeholder="Enter email"
                                             onChange={(event) => handleChange(event.target.value, "email")}
                                             value={email}
+                                            required
                                         />
                                     </Form.Group>
                                     <Form.Group className="mb-12">
@@ -124,6 +126,7 @@ const Contact = () => {
                                             placeholder="Your name"
                                             onChange={(event) => handleChange(event.target.value, "name")}
                                             value={name}
+                                            required
                                         />
                                     </Form.Group>
                                     <Form.Group className="mb-12">
@@ -133,6 +136,7 @@ const Contact = () => {
                                             placeholder="Your phone number"
                                             onChange={(event) => handleChange(event.target.value, "phoneNo")}
                                             value={phoneNo}
+                                            required
                                         />
                                     </Form.Group>
                                     <Form.Group>
@@ -144,6 +148,7 @@ const Contact = () => {
                                             placeholder="Your message"
                                             onChange={(event) => handleChange(event.target.value, "message")}
                                             value={message}
+                                            required
                                         />
                                     </Form.Group>
                                     <div className="mt-24 d-flex justify-content-end">
